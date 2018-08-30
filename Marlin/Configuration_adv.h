@@ -521,7 +521,7 @@
 // @section lcd
 
 // Include a page of printer information in the LCD Main Menu
-#define LCD_INFO_MENU
+// #define LCD_INFO_MENU
 
 // Scroll a longer status message into view
 #define STATUS_MESSAGE_SCROLLING
@@ -1484,14 +1484,14 @@
 #define CUSTOM_USER_MENUS
 #if ENABLED(CUSTOM_USER_MENUS)
   #define USER_SCRIPT_DONE "M117 User Script Done"
-  #define USER_SCRIPT_AUDIBLE_FEEDBACK
+  // #define USER_SCRIPT_AUDIBLE_FEEDBACK
   #define USER_SCRIPT_RETURN  // Return to status screen after a script
 
   #define USER_DESC_1 "Home & Info"
   #define USER_GCODE_1 "G28\nM503"
 
   #define USER_DESC_2 "Home & Level Bed"
-  #define USER_GCODE_2 "G28\nG29 W"
+  #define USER_GCODE_2 "G28\nG29"
 
   #define USER_DESC_3 "Heat Bed/Home/Level"
   #define USER_GCODE_3 "M140 S100\nG28\nG29"
